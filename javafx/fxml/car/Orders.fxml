@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.car.ListOrdercontroller">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Pane prefHeight="550.0" prefWidth="830.0">
+                    <children>
+                        <Text layoutX="333.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders List">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="481.0" layoutY="43.0" mnemonicParsing="false" text="Search">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                        <TextField layoutX="261.0" layoutY="43.0" promptText="Search">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextField>
+                        <Button layoutX="579.0" layoutY="43.0" mnemonicParsing="false" onAction="#gotoAddOrders" text="+">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                        <TableView fx:id="tbview" layoutY="93.0" prefHeight="503.0" prefWidth="830.0">
+                            <columns>
+                                <TableColumn fx:id="tcFullName" prefWidth="159.0" text="Full Name " />
+                                <TableColumn fx:id="tcDOB" prefWidth="98.0" text="DOB" />
+                                <TableColumn fx:id="tcCar" minWidth="0.0" prefWidth="112.0" text="Car" />
+                                <TableColumn fx:id="tcDays" prefWidth="128.0" text="Days" />
+                                <TableColumn fx:id="tcPrice" prefWidth="188.0" text="Total Price" />
+                            </columns>
+                        </TableView>
+                        <Hyperlink layoutX="20.0" layoutY="16.0" onAction="#closetodonelist" text="&lt;&lt;Back" />
+                    </children>
+                </Pane>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

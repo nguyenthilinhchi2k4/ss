@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.car.AddOrdercontroller">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Pane prefHeight="550.0" prefWidth="830.0" style="-fx-background-color: white;">
+                    <children>
+                        <Pane layoutX="93.0" layoutY="83.0" prefHeight="318.0" prefWidth="667.0" style="-fx-background-color: silver; -fx-border-radius: 15px;">
+                            <children>
+                        <DatePicker layoutX="7.0" layoutY="78.0" prefHeight="42.0" prefWidth="222.0" promptText=" Date Of Birth" />
+                        <Text layoutX="52.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="134.861328125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                              <TextArea fx:id="ipAddress" layoutX="14.0" layoutY="144.0" prefHeight="122.0" prefWidth="252.0" promptText="Address" style="-fx-border-radius: 10px;">
+                                  <font>
+                                      <Font size="18.0" />
+                                  </font>
+                              </TextArea>
+                        <TextField layoutX="388.0" layoutY="139.0" promptText="Price">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                              <TextField fx:id="ipDays" layoutX="388.0" layoutY="214.0" prefHeight="27.0" prefWidth="233.0" promptText="Days" style="-fx-border-radius: 10px;">
+                                  <font>
+                                      <Font size="18.0" />
+                                  </font>
+                              </TextField>
+                              <TextField fx:id="ipNameCar" layoutX="391.0" layoutY="81.0" prefHeight="35.0" prefWidth="234.0" promptText="Name Car" style="-fx-border-radius: 10px;">
+                                  <font>
+                                      <Font size="18.0" />
+                                  </font>
+                              </TextField>
+                            </children></Pane>
+                        <TextField fx:id="ipFullName" layoutX="101.0" layoutY="106.0" prefHeight="39.0" prefWidth="236.0" promptText="Full Name" style="-fx-border-radius: 10px;">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="ipIDCar" layoutX="474.0" layoutY="106.0" prefWidth="252.0" promptText="ID Car" style="-fx-border-radius: 10px;">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextField>
+                        <Button layoutX="346.0" layoutY="453.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #04aa6d; -fx-border-radius: 15px;" text="Submit" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                        <Hyperlink layoutX="28.0" layoutY="16.0" onAction="#closeaddorders" text="&lt;&lt;Back" />
+                        <Text layoutX="310.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Order">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>
